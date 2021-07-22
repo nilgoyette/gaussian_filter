@@ -1,0 +1,17 @@
+[package]
+name = "gaussian_filter"
+version = "0.1.0"
+authors = ["Nil Goyette <nil.goyette@imeka.ca>"]
+edition = "2018"
+
+[dev-dependencies]
+criterion = "0.3"
+
+[dependencies]
+approx = { version = "0.4" }
+ndarray = { version="0.15", features = ["approx"] }
+num-traits = "0.2"
+
+[[bench]]
+name = "gaussian_filter"
+harness = false
